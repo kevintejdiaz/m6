@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+
+}
+
+select, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+select option{
+    color: black;
+}
+
+
+select:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.switch-button {
+    display: flex;
+    justify-content: space-between; /* Esto alinea el texto a la izquierda y la checkbox a la derecha */
+    align-items: center; /* Esto centra verticalmente los elementos */
+    background-color: #6079a4;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.switch-button input[type="checkbox"] {
+    margin-left: 10px; /* Agrega espacio entre el texto y la checkbox */
+}
+
+
+
+input[type="submit"] {
+    background: #ff6f61;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #e65c50;
+}
+
+#image-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-box {
+    width: 400px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-caption {
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.espaciador{
+    height: 50px;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background: linear-gradient( #2a5298);
+    display: none;
+    overflow: hidden;
+    color: white;
+  }
+
+
+
+  
+
+  
